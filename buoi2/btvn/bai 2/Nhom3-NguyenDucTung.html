@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/110727407?s=400&u=ce1df27bb10ac0316a06e2a91deff0d17aa96d8e&v=4" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a30a240fa1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Background -->
+    <span class="background-box box-1"></span>
+    <span class="background-box box-2"></span>
+    <span class="background-box box-3"></span>
+
+    <!-- Login form -->
+    <div class="auth-form js-login-form auth-form--show">
+        <h1 class="auth-form__heading">Login</h1>
+
+        <form action="">
+            <label for="username" class="auth-form__label">Username</label><br>
+            <i class="fa-regular fa-user auth-form__input-icon"></i>
+            <input type="text" required id="username" class="auth-form__input" placeholder="Type your username" oninvalid="this.setCustomValidity('Please enter your username')" oninput="this.setCustomValidity('')"><br>
+
+            <label for="password" class="auth-form__label">Password</label><br>
+            <i class="fa-solid fa-lock auth-form__input-icon"></i>
+            <input type="password" required id="password" class="auth-form__input" placeholder="Type your password" oninvalid="this.setCustomValidity('Please enter your password')" oninput="this.setCustomValidity('')"><br>
+            
+            <a href="#" class="auth-form__forgot-pwd">Forgot password?</a><br>
+            <input type="submit" value="LOGIN" class="auth-form__btn"></input>
+        </form> 
+        <p>Or Sign Up Using</p>
+        <div class="auth-form__social">
+            <i class="fa-brands fa-facebook auth-form__social-icon auth-form__icon-facebook"></i>
+            <i class="fa-brands fa-square-twitter auth-form__social-icon auth-form__icon-twitter"></i>
+            <i class="fa-brands fa-google auth-form__social-icon auth-form__icon-google"></i>
+        </div>
+        
+        <p class="auth-form__switch--high">Or Sign Up Using</p>
+        <a href="#" class="auth-form__switch-btn">Sign up</a>
+    </div>
+
+    <!-- Sign up form -->
+    <div class="auth-form js-signup-form">
+        <h1 class="auth-form__heading">Sign up</h1>
+
+        <form action="">
+            <label for="username" class="auth-form__label">Username</label><br>
+            <i class="fa-regular fa-user auth-form__input-icon"></i>
+            <input type="text" required id="username" class="auth-form__input" placeholder="Type your username" oninvalid="this.setCustomValidity('Please enter your username')" oninput="this.setCustomValidity('')"><br>
+
+            <label for="password" class="auth-form__label">Password</label><br>
+            <i class="fa-solid fa-lock auth-form__input-icon"></i>
+            <input type="password" required id="password" class="auth-form__input" placeholder="Type your password" oninvalid="this.setCustomValidity('Please enter your password')" oninput="this.setCustomValidity('')"><br>
+            <label for="password" class="auth-form__label">Password</label><br>
+            <i class="fa-solid fa-lock auth-form__input-icon"></i>
+            <input type="password" required id="password" class="auth-form__input" placeholder="Type your password again" oninvalid="this.setCustomValidity('Please re-enter your password')" oninput="this.setCustomValidity('')"><br>
+            
+            <input type="submit" value="SIGN UP" class="auth-form__btn"></input>
+        </form> 
+        <p>Or Sign Up Using</p>
+        <div class="auth-form__social">
+            <i class="fa-brands fa-facebook auth-form__social-icon auth-form__icon-facebook"></i>
+            <i class="fa-brands fa-square-twitter auth-form__social-icon auth-form__icon-twitter"></i>
+            <i class="fa-brands fa-google auth-form__social-icon auth-form__icon-google"></i>
+        </div>
+        
+        <p class="auth-form__switch--low">Already have an account?</p>
+        <a href="#" class="auth-form__switch-btn">Sign in</a>
+    </div>
+</body>
+</html>
+
+<script>
+    const signUpForm = document.querySelector(".js-signup-form");
+    const loginForm = document.querySelector(".js-login-form");
+    const switchBtns =  document.querySelectorAll(".auth-form__switch-btn");
+    
+    function switchForm() {
+        if (loginForm.classList.contains("auth-form--show") === true) {
+            loginForm.classList.remove("auth-form--show");
+            signUpForm.classList.add("auth-form--show");
+        }
+        else {
+            signUpForm.classList.remove("auth-form--show");
+            loginForm.classList.add("auth-form--show");
+        }
+    }
+
+    for (const switchBtn of switchBtns) {
+        switchBtn.addEventListener("click", switchForm);
+    }
+</script>
