@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #1162fb;
+}
+
+body, html {
+    height: 100%;
+    width: 100vw;
+}
+body {
+    height: 100%;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/615d929c5a437a39f5c57b41/40ebc72e-6ba6-4c95-837a-268c6282908b/About+MOTIS+Fire+Testing+Equipment+Manufacturer.jpg);
+    background-color: #f3f6f9;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding-top: 28px;
+}
+
+.header__logo {
+    max-height: 80px;
+    width: auto;
+    border-radius: 80px;
+}
+
+.navbar {
+    display: inline-block;
+    margin: auto;
+}
+
+.navbar__item {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar__item--actived {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--main-color);
+}
+
+.navbar__item:hover {
+    color: var(--main-color);
+}
+
+.navbar__buy-btn {
+    color: rgb(255, 255, 255, 0.9);
+    background-color: var(--main-color);
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.navbar__buy-btn:hover {
+    color: rgb(255, 255, 255, 1);
+    cursor: pointer;
+    box-shadow: 0 4px 15px var(--main-color);
+}
+
+/* Section */
+.section {
+    text-align: center;
+}
+
+.section__heading {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 44px;
+    margin-top: 40px;
+}
+
+.section__calendar {
+    font-size: 20px;
+    margin-top: 32px;
+}
+
+/* Form */
+.form {
+    margin: 20px auto;
+    width: 440px;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.form__heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+.form__input {
+    display: block;
+    width: 84%;
+    margin: 24px auto;
+    padding: 8px 0;
+    border-bottom: rgba(117, 117, 117, 0.1) 1px solid;
+    font-size: 16px;
+}
+
+.form__input:focus-visible {
+    outline: none;
+}
+
+.form__input[type="checkbox"] {
+    margin-left: 36px;
+    margin-top: -8px;
+    padding: 0;
+    width: 16px;
+    display: inline-block
+}
+
+.form__sumbit-btn {
+    display: block;
+    width: 84%;
+    height: 44px;
+    margin: auto;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.form__sumbit-btn:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    width: 40%;
+    min-height: 220px;
+    background-color: var(--main-color);
+    color: white;
+    margin: auto;
+    border-radius: 12px;
+    padding: 24px 68px 0;
+}
+
+.footer__item {
+    float: left;
+    width: 25%;
+    font-size: 24px;
+}
+
+.footer__item-heading {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.footer__item-info {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}

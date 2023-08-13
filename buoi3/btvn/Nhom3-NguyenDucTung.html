@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIT's 13th Birthday</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/890580527902511154/1139102449144189018/364140964_831545942127226_4612099346216929698_n-fotor-20230810144456.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img class="header__logo" src="https://cdn.discordapp.com/attachments/890580527902511154/1139102449144189018/364140964_831545942127226_4612099346216929698_n-fotor-20230810144456.png" alt="Header logo">
+        <nav class="header__navbar navbar">
+            <a href="#" class="navbar__item navbar__item--actived">Home</a>
+            <a href="#" class="navbar__item">About</a>
+            <a href="#" class="navbar__item">Schedule</a>
+            <a href="#" class="navbar__item">Blog</a>
+            <a href="#" class="navbar__item">Contact</a>
+            <a href="#" class="navbar__item">
+                <button class="navbar__buy-btn">Buy ticket <i class="fa-solid fa-cart-shopping"></i></button>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Section -->
+    <div class="section">
+        <h1 class="section__heading">Happy birthday to hitclub</h1>
+        <p class="section__calendar"><i class="fa-solid fa-calendar-days"></i>18/8/2010 - 18/8/2023</p>
+    </div>
+
+    <!-- Form -->
+    <form action="" class="form">
+        <h2 class="form__heading">Join Conference</h2>
+        <input type="text" required class="form__input" placeholder="Enter your Name" oninvalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')">
+        <input type="email" required class="form__input" placeholder="Enter your Email" oninvalid="this.setCustomValidity('Please enter your email')" oninput="this.setCustomValidity('')">
+        <input type="tel" required class="form__input" placeholder="Enter your Phone" pattern="[0-9]{10}" oninvalid="this.setCustomValidity('Please enter your phone number')" oninput="this.setCustomValidity('')">
+        <input type="checkbox" required id="terms" class="form__input" oninvalid="this.setCustomValidity('Check this box if you\'re done')" oninput="this.setCustomValidity('')">
+        <label for="terms">I have read and accept the terms and conditions</label>
+        <input type="submit" value="Join now" class="form__sumbit-btn"></input>
+    </form>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__item">
+            <i class="fa-solid fa-location-dot"></i>
+            <h1 class="footer__item-heading">Venue</h1>
+            <p class="footer__item-info">A small river named Duden flows by their place and supplies.</p>
+        </div>
+        <div class="footer__item">
+            <i class="fa-solid fa-plane"></i>
+            <h1 class="footer__item-heading">Transport</h1>
+            <p class="footer__item-info">A small river named Duden flows by their place and supplies.</p>
+        </div>
+        <div class="footer__item">
+            <i class="fa-solid fa-hotel"></i>
+            <h1 class="footer__item-heading">Hotel</h1>
+            <p class="footer__item-info">A small river named Duden flows by their place and supplies.</p>
+        </div>
+        <div class="footer__item">
+            <i class="fa-solid fa-utensils"></i>
+            <h1 class="footer__item-heading">Restaurant</h1>
+            <p class="footer__item-info">A small river named Duden flows by their place and supplies.</p>
+        </div>
+    </div>
+</body>
+</html>
